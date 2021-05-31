@@ -30,115 +30,166 @@
   <body>
     <!-- header -->
     <div class="container-fluid">
-      <div class="row container header d-flex justify-content-between bg-light">
-        <span
-          ><i class="fab fa-instagram"></i> Instagram
+      <nav
+        class="
+          navbar navbar-expand-md navbar-light
+          bg-light
+          m-auto
+          d-flex
+          justify-content-around
+        "
+      >
+        <div class="logo">
+          <a class="navbar-brand" href="#"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </div>
+        <div class="d-inline-flex p-1 m-1">
+          <!-- Button trigger modal -->
+          <!--Create new button-->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Create a new post
+          </button>
 
-          <ul class="nav nav-pills">
-            <!--Create new post Btn-->
-            <li class="nav-item">
-              <button
-                class="btn btn-primary"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseExample"
-                aria-expanded="false"
-                aria-controls="collapseExample"
-              >
-                Create a new post
-              </button>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. Nihil anim keffiyeh
-                  helvetica, craft beer labore wes anderson cred nesciunt
-                  sapiente ea proident.
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="input-group">
+                      <textarea
+                        class="form-control"
+                        aria-label="With textarea"
+                      ></textarea>
+                    </div>
+                    <div class="mt-2">
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fas fa-camera"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fas fa-map-marker"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-primary">Publish</button>
                 </div>
               </div>
-            </li>
+            </div>
+          </div>
 
-            <li class="nav-item dropdown">
-              <!--Gear Dropdown list-->
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-expanded="false"
-                ><i class="fas fa-cog"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">Log Out</a></li>
-              </ul>
-            </li>
-          </ul>
-        </span>
-      </div>
-
-      <!-- multi/ single button -->
-      <div class="row">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <!--Home-->
+          <!--Gear Dropdown-->
+          <div class="dropdown">
             <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+            >
+              <i class="fas fa-cog"></i>
+            </button>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="toggle">
+        <ul
+          class="nav nav-pills m-3 justify-content-center toggle-pills"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
               class="nav-link active"
               id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
+              data-toggle="pill"
+              href="#pills-home"
               type="button"
               role="tab"
               aria-controls="pills-home"
               aria-selected="true"
+              >Home</a
             >
-              Home
-            </button>
           </li>
-          <li class="nav-item" role="presentation">
-            <!--Profile-->
-            <button
+          <li class="nav-item">
+            <a
               class="nav-link"
               id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
+              data-toggle="pill"
+              href="#pills-profile"
               role="tab"
               aria-controls="pills-profile"
               aria-selected="false"
+              >Profile</a
             >
-              Profile
-            </button>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
-          <!--home-->
           <div
             class="tab-pane fade show active"
             id="pills-home"
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            1
+            1 Multiview
           </div>
-
-          <!--Profile-->
           <div
             class="tab-pane fade"
             id="pills-profile"
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
           >
-            2
+            <div class="container-fluid post bg-light p-5">
+              <div class="container card w-50 m-auto">
+                <div class="d-flex justify-content-between p-3">
+                  <h3>My First Post</h3>
+                  <span>12/14</span>
+                </div>
+                <img
+                  class="card-img-top img-fluid"
+                  src="https://images.freeimages.com/images/large-previews/e5f/pink-lotus-1396744.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <span>23 Likes</span>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- Bootstap js -->
