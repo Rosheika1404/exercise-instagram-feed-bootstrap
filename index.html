@@ -44,19 +44,20 @@
             ><i class="fab fa-instagram"></i> Instagram</a
           >
         </div>
-        <div class="d-inline-flex p-1 m-1">
+        <div class="d-inline-flex">
           <!-- Button trigger modal -->
+
           <!--Create new button-->
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-success m-1"
             data-toggle="modal"
             data-target="#exampleModal"
           >
             Create a new post
           </button>
 
-          <!-- Modal -->
+          <!--  Create New Post Modal -->
           <div
             class="modal fade"
             id="exampleModal"
@@ -76,9 +77,11 @@
                       ></textarea>
                     </div>
                     <div class="mt-2">
+                      <!--camera button-->
                       <button type="button" class="btn btn-outline-secondary">
                         <i class="fas fa-camera"></i>
                       </button>
+                      <!--Map location button-->
                       <button type="button" class="btn btn-outline-secondary">
                         <i class="fas fa-map-marker"></i>
                       </button>
@@ -86,6 +89,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
+                  <!--cancel Button-->
                   <button
                     type="button"
                     class="btn btn-secondary"
@@ -93,7 +97,8 @@
                   >
                     Cancel
                   </button>
-                  <button type="button" class="btn btn-primary">Publish</button>
+                  <!--Publish Button-->
+                  <button type="button" class="btn btn-success">Publish</button>
                 </div>
               </div>
             </div>
@@ -101,8 +106,9 @@
 
           <!--Gear Dropdown-->
           <div class="dropdown">
+            <!--Gear button-->
             <button
-              class="btn btn-secondary dropdown-toggle"
+              class="btn btn-light dropdown-toggle m-1"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -120,6 +126,7 @@
           </div>
         </div>
       </nav>
+
       <section id="toggle">
         <ul
           class="nav nav-pills m-3 justify-content-center toggle-pills"
@@ -127,47 +134,141 @@
           role="tablist"
         >
           <li class="nav-item">
+            <!--Multiview tab-->
             <a
-              class="nav-link active"
-              id="pills-home-tab"
+              class="nav-link active toggle"
+              id="pills-multiview-tab"
               data-toggle="pill"
-              href="#pills-home"
+              href="#pills-multiview"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="pills-multiview"
               aria-selected="true"
-              >Home</a
-            >
+              ><i class="fas fa-th"></i
+            ></a>
           </li>
           <li class="nav-item">
+            <!--single view tab-->
             <a
-              class="nav-link"
-              id="pills-profile-tab"
+              class="nav-link toggle"
+              id="pills-singleview-tab"
               data-toggle="pill"
-              href="#pills-profile"
+              href="#pills-singleview"
               role="tab"
-              aria-controls="pills-profile"
+              aria-controls="pills-singleview"
               aria-selected="false"
-              >Profile</a
-            >
+              ><i class="fas fa-square"></i
+            ></a>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
+          <!--Multiview -->
           <div
             class="tab-pane fade show active"
-            id="pills-home"
+            id="pills-multiview"
             role="tabpanel"
-            aria-labelledby="pills-home-tab"
+            aria-labelledby="pills-multiview-tab"
           >
-            1 Multiview
+            <div class="container-fluid bg-light pt-1" id="grid">
+              <div class="card-group">
+                <!--Row 1-->
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.freeimages.com/images/large-previews/e5f/pink-lotus-1396744.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.freeimages.com/images/large-previews/035/young-golden-retriever-1404848.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.freeimages.com/images/large-previews/fe4/white-tiger-1360369.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
+              </div>
+              <div class="card-group">
+                <!--Row 2-->
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.freeimages.com/images/large-previews/7ed/pizza-1327877.jpg"
+                    alt="Card image cap"
+                    width="626"
+                    height="420"
+                  />
+                </div>
+                <div class="card">
+                  <iframe
+                    src="https://giphy.com/embed/Yg5ABuNt4BgO9GcN4v"
+                    width="626"
+                    height="420"
+                    frameborder="0"
+                    class="giphy-embed m-auto"
+                    allowfullscreen
+                  ></iframe>
+                  <p>
+                    <a
+                      href="https://giphy.com/gifs/IamOneMind-coffee-morning-iam-Yg5ABuNt4BgO9GcN4v"
+                      >via GIPHY</a
+                    >
+                  </p>
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap"
+                    width="626"
+                    height="418"
+                  />
+                </div>
+              </div>
+              <div class="card-group">
+                <!--Row 3-->
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.pexels.com/photos/3662803/pexels-photo-3662803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap"
+                    width="626"
+                    height="420"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img"
+                    src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Card image cap"
+                    width="626"
+                    height="420"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+          <!--Single View -->
           <div
             class="tab-pane fade"
-            id="pills-profile"
+            id="pills-singleview"
             role="tabpanel"
-            aria-labelledby="pills-profile-tab"
+            aria-labelledby="pills-singleview-tab"
           >
-            <div class="container-fluid post bg-light p-5">
+            <div class="container-fluid bg-light p-5" id="post">
               <div class="container card w-50 m-auto">
                 <div class="d-flex justify-content-between p-3">
                   <h3>My First Post</h3>
@@ -184,6 +285,8 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
+                  <span><i class="far fa-heart"></i></span>
+                  <span>Comment ...</span>
                 </div>
               </div>
             </div>

@@ -1,5 +1,16 @@
-.header{
-    margin:auto;
+#grid{
+    margin:0;
+    padding:0;
     
 }
-
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #363738;
+}
+.toggle{
+    color:#6c757d;
+}
