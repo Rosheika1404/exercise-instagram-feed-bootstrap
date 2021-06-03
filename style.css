@@ -14,3 +14,19 @@
 .toggle{
     color:#6c757d;
 }
+.icon{
+    padding:6px;
+}
+.like{
+    margin-top: 5px;
+}
+.icon .like{
+    font-size: 12px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) { }
+@media (max-width: 768px) { }
+@media (max-width: 576px) {
+    
+ }
